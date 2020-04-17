@@ -1,16 +1,17 @@
 const express = require('express'),
     app = express();
-port = 80 || process.env.port;
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('pages/index');
+    console.log(req)
 })
 
 app.get('/about', (req, res) => {
     res.render('pages/about');
+    console.log(req.originalUrl)
 })
 
-app.listen(port, () => console.log(`Server Running on ${port}`));
+app.listen(() => console.log(`Server Running on`));

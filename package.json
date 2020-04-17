@@ -1,6 +1,7 @@
 {
   "name": "yash",
   "version": "1.0.0",
+  "homepage": "node.yashkaraday.com",
   "description": "",
   "main": "app.js",
   "dependencies": {
